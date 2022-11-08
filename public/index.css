@@ -6,7 +6,8 @@
   --jet: #333333;
   --purple-pizzazz: #e74bda;
   --blue-violet-color-wheel: #511e6a;
-  --main-bg: #1b1b32;
+  --main-bg: #0d0d0e;
+  --nav-bg:#111
 }
 
 * {
@@ -55,8 +56,8 @@ li {
   float: left;
 }
 #nav {
-  box-shadow: 0 0px 10px rgba(255, 255, 255, 0.3);
-  background-color: var(--main-bg);
+
+  background-color: var(--nav-bg);
   position: fixed;
   width: 100%;
   padding-left: 1.5em;
@@ -66,12 +67,14 @@ li {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 16px;
+  padding: 30px 16px;
   text-decoration: none;
+  box-sizing: content-box;
 }
 
 #nav li a:hover {
-  background-color: brown;
+
+  border-bottom: 4px solid #00d4c3;
 }
 
 #welcome {
@@ -80,7 +83,8 @@ li {
   font-size: 27px;
   justify-content: center;
   align-items: center;
-  background: #3a3240;
+color: black;
+  background-image: url("BG_Gradient_Embers.png");
 }
 #welcome h1 {
   padding: 20px;
@@ -128,12 +132,12 @@ li {
   color: #3a3240;
 }
 #goals {
-  width: 80%;
-  padding: 20px;
+  
+  padding: 100px 100px;
   margin: auto;
-  background: beige;
+  background:  #00d3d3;
   color: grey;
-  border-radius: 30px;
+  
   font-family: monospace;
   font-size: 1rem;
 }
@@ -144,6 +148,15 @@ li {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.button
+{
+  background-color: #00d3d3;
+  padding: 10px 20px;
+  color: black;
+  box-shadow: 0px 0px 5px #00d3d3;
+  margin-top: 20px;
 }
 
 .moderators-header {
