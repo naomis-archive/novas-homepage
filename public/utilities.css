@@ -15,13 +15,28 @@
    text-align: center;
    padding: 1rem;
    transition: 0.3s ease-in-out;
-   background: var(--wisteria);
+   background: #444;
+   
    cursor: pointer;
 }
 
 .card:hover {
    background: var(--bone);
+   color: black!important;
 }
+
+.card:hover h3 {
+ 
+   color: black!important;
+}
+
+
+.card:hover h4 {
+ 
+   color: black!important;
+}
+
+
 
 .card:hover img {
    transform: scale(1.06);
@@ -35,12 +50,12 @@
 }
 
 .card h3 {
-   color: var(--main-bg);
+   color: white;
    font-weight: 400;
    margin: 1rem 0 0.5rem;
 }
 .card h4 {
-   color: var(--main-bg);
+   color: white;
    font-weight: 300;
    opacity: 60%;
 }
