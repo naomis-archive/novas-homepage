@@ -36,6 +36,14 @@
     {
       "name": "Minetest Cloud Items",
       "url": "https://github.com/minetest-mods/cloud_items"
+    },
+    {
+      "name": "PanqKart: Minetest racing!",
+      "url": "https://github.com/panqkart/panqkart"
+    },
+    {
+      "name": "Memory Game",
+      "url": "https://github.com/Panquesito7/memory-game"
     }
   ],
   "notes": "Connect with me on Discord! Panquesito7#3723"
