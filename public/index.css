@@ -160,6 +160,13 @@ color: black;
   border: 1px solid black;
   font-size: 1.3rem;
   margin-top: 20px;
+  transition: ease-in-out 500ms;
+}
+
+.button:hover{
+  background-color: rgb(23, 22, 22);
+  color: #ca00a9;
+  border-radius: 30px;
 }
 
 .moderators-header {
@@ -201,3 +208,5 @@ color: black;
     grid-template-columns: 1fr;
   }
 }
+
+
