@@ -1,6 +1,6 @@
 # Pull Request
 
-<!--Before contributing, please read our contributing guidelines: https://github.com/nhcommunity/homepage/blob/main/CONTRIBUTING.md-->
+<!--Before contributing, please read our contributing guidelines: https://github.com/naomis-novas/homepage/blob/main/CONTRIBUTING.md-->
 
 ## Description
 

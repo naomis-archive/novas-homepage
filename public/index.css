@@ -7,7 +7,7 @@
   --purple-pizzazz: #e74bda;
   --blue-violet-color-wheel: #511e6a;
   --main-bg: #0d0d0e;
-  --nav-bg:#111
+  --nav-bg: #111;
 }
 
 * {
@@ -43,7 +43,7 @@ ul {
   overflow: hidden;
 }
 #opening h3 {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 #opening h3 a {
   color: white;
@@ -56,7 +56,6 @@ li {
   float: left;
 }
 #nav {
-
   background-color: var(--nav-bg);
   position: fixed;
   width: 100%;
@@ -73,7 +72,6 @@ li {
 }
 
 #nav li a:hover {
-
   border-bottom: 4px solid #ff00c8;
 }
 
@@ -83,36 +81,46 @@ li {
   font-size: 27px;
   justify-content: center;
   align-items: center;
-color: black;
-  background-image: url("St.png");
+  color: black;
+  background-image: url(https://cdn.nhcarrigan.com/banners/novas.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#welcome div {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 #welcome h1 {
   padding: 20px;
   font-family: monospace;
 }
+
 #opening {
   margin: 5%;
   padding: 5%;
   font-family: monospace;
   font-size: 1rem;
 }
+
 #gaming {
   margin: 5%;
   padding: 5%;
   font-family: monospace;
   font-size: 1rem;
 }
+
 .para {
-    line-height: 1.5;
+  line-height: 1.5;
 }
+
 #discussion {
   margin: 5%;
   padding: 5%;
   font-family: monospace;
   font-size: 1rem;
 }
+
 #whoisNH {
   background: #e3dfd1;
   color: black;
@@ -122,7 +130,8 @@ color: black;
   margin: 10% auto;
   padding: 5%;
 }
-#nicksInfo {
+
+#naomiInfo {
   display: flex;
   padding-top: 20px;
 }
@@ -130,16 +139,16 @@ color: black;
 #goals h2 {
   color: #3a3240;
 }
+
 #whoisNH h2 {
   color: #3a3240;
 }
+
 #goals {
-  
   padding: 150px 100px;
   margin: auto;
-  background:  #d300a5;
+  background: #d300a5;
   color: rgb(236, 236, 236);
-  
   font-family: monospace;
   font-size: 1rem;
 }
@@ -152,8 +161,7 @@ color: black;
   flex-direction: column;
 }
 
-.button
-{
+.button {
   background-color: #ca00a9;
   padding: 15px 25px;
   color: rgb(255, 255, 255);
@@ -163,7 +171,7 @@ color: black;
   transition: ease-in-out 500ms;
 }
 
-.button:hover{
+.button:hover {
   background-color: rgb(23, 22, 22);
   color: #ca00a9;
   border-radius: 30px;
@@ -195,10 +203,10 @@ color: black;
 }
 
 @media screen and (max-width: 1000px) {
-  #nicksInfo {
+  #naomiInfo {
     flex-direction: column;
   }
-  #nicksInfo img {
+  #naomiInfo img {
     margin: auto;
   }
 }
@@ -208,5 +216,3 @@ color: black;
     grid-template-columns: 1fr;
   }
 }
-
-
