@@ -6,8 +6,8 @@
   --light-purple: #aea8de;
   --light-purple-trans: #aea8deb0;
   --light-blue: #48d1cc;
-  --cursor-normal: url("/assets/img/cursor.cur");
-  --cursor-pointer: url("/assets/img/pointer.cur");
+  --cursor-normal: url("https://naomi.lgbt/assets/img/cursor.cur");
+  --cursor-pointer: url("https://naomi.lgbt/assets/img/pointer.cur");
 
   /* Sponsor Colours */
   --silver-sponsor: #607d8b;
