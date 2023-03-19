@@ -101,6 +101,15 @@
             "name": "Naomi Carrigan",
             "email": "nhcarrigan@gmail.com"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
