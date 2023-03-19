@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: sticky;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-purple-trans);
+  color: var(--dark-purple);
+}
+
+img {
+  height: 50px;
+}
+
+a {
+  color: var(--dark-blue);
+}
+
+p {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.nested {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,26 @@
+<h1>Welcome to Naomi's Novas~!</h1>
+<img src="https://cdn.nhcarrigan.com/avatars/novas.png" alt="Naomi's Novas" />
+<p>
+  We're a group of folks committed to providing a safe and comfortable space for
+  anyone to try their hand at open source contribution, whether code or
+  otherwise.
+</p>
+<p>
+  As our founding member, <a routerLink="/naomi">Naomi</a> is committed to
+  helping members of
+  <a href="https://freecodecamp.org" target="_blank" rel="noopener noreferrer"
+    >freeCodeCamp</a
+  >,
+  <a href="https://www.eddiehub.org" target="_blank" rel="noopener noreferrer"
+    >EddieHub</a
+  >, and many other communities by providing support to folks who need it.
+</p>
+<app-social
+  *ngFor="let social of socials"
+  [icon]="social.icon"
+  [name]="social.name"
+  [url]="social.url"
+  [color]="social.color"
+  [background]="social.background"
+  [hover]="social.hover"
+></app-social>

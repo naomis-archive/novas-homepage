@@ -1,0 +1,24 @@
+<a
+  class="social"
+  href="{{ url }}"
+  target="_blank"
+  rel="noopener noreferrer"
+  (mouseenter)="hover = true"
+  (mouseleave)="hover = false"
+  [ngStyle]="
+    hover
+      ? {
+          background: color,
+          color: background,
+          'border-color': background
+        }
+      : {
+          background: background,
+          color: color,
+          'border-color': color
+        }
+  "
+>
+  <fa-icon [icon]="icon"></fa-icon>
+  <p>{{ name }}</p>
+</a>
