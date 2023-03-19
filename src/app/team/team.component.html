@@ -1,0 +1,176 @@
+<h1>Our Team</h1>
+<p>
+  This community is made possible entirely thanks to our volunteer team, who
+  work tirelessly to ensure our community goals are met.
+</p>
+<button *ngIf="view !== 'admins'" (click)="setView('admins')">Admins</button>
+<button *ngIf="view !== 'developers'" (click)="setView('developers')">
+  Developers
+</button>
+<button *ngIf="view !== 'support'" (click)="setView('support')">Support</button>
+<button *ngIf="view !== 'moderators'" (click)="setView('moderators')">
+  Moderators
+</button>
+<button *ngIf="view !== 'artists'" (click)="setView('artists')">Artists</button>
+<div *ngIf="view === 'admins'">
+  <h2>Admins</h2>
+  <p *ngIf="!this[view].length">
+    It looks like we don't have any {{ view }} yet! Check back later!
+  </p>
+  <div *ngFor="let staff of this[view]">
+    <div class="info">
+      <img
+        class="avatar"
+        src="{{ staff.avatarUrl }}"
+        alt="{{ staff.name }}"
+        onError="this.onError=null;this.src='https://cdn.nhcarrigan.com/avatars/error.png'"
+      />
+      <h3 class="name">{{ staff.name }}</h3>
+      <p class="role">{{ staff.roles.join(', ') }}</p>
+      <p>{{ staff.bio }}</p>
+    </div>
+    <div class="socials">
+      <app-social
+        *ngFor="let social of staff.socials"
+        [icon]="social.icon"
+        [name]="social.name"
+        [url]="social.url"
+        [color]="social.color"
+        [background]="social.background"
+        [hover]="social.hover"
+      ></app-social>
+    </div>
+  </div>
+</div>
+<div *ngIf="view === 'developers'">
+  <h2>Developers</h2>
+  <p *ngIf="!this[view].length">
+    It looks like we don't have any {{ view }} yet! Check back later!
+  </p>
+  <div *ngFor="let staff of this[view]">
+    <div class="info">
+      <img
+        class="avatar"
+        src="{{ staff.avatarUrl }}"
+        alt="{{ staff.name }}"
+        onError="this.onError=null;this.src='https://cdn.nhcarrigan.com/avatars/error.png'"
+      />
+      <h3 class="name">{{ staff.name }}</h3>
+      <p class="role">{{ staff.roles.join(', ') }}</p>
+      <p>{{ staff.bio }}</p>
+    </div>
+    <div class="socials">
+      <app-social
+        *ngFor="let social of staff.socials"
+        [icon]="social.icon"
+        [name]="social.name"
+        [url]="social.url"
+        [color]="social.color"
+        [background]="social.background"
+        [hover]="social.hover"
+      ></app-social>
+    </div>
+  </div>
+</div>
+<div *ngIf="view === 'support'">
+  <h2>Support</h2>
+  <p *ngIf="!this[view].length">
+    It looks like we don't have any {{ view }} yet! Check back later!
+  </p>
+  <div *ngFor="let staff of this[view]">
+    <div class="info">
+      <img
+        class="avatar"
+        src="{{ staff.avatarUrl }}"
+        alt="{{ staff.name }}"
+        onError="this.onError=null;this.src='https://cdn.nhcarrigan.com/avatars/error.png'"
+      />
+      <h3 class="name">{{ staff.name }}</h3>
+      <p class="role">{{ staff.roles.join(', ') }}</p>
+      <p>{{ staff.bio }}</p>
+    </div>
+    <div class="socials">
+      <app-social
+        *ngFor="let social of staff.socials"
+        [icon]="social.icon"
+        [name]="social.name"
+        [url]="social.url"
+        [color]="social.color"
+        [background]="social.background"
+        [hover]="social.hover"
+      ></app-social>
+    </div>
+  </div>
+</div>
+<div *ngIf="view === 'moderators'">
+  <h2>Moderators</h2>
+  <div *ngFor="let staff of this[view]">
+    <div class="info">
+      <img
+        class="avatar"
+        src="{{ staff.avatarUrl }}"
+        alt="{{ staff.name }}"
+        onError="this.onError=null;this.src='https://cdn.nhcarrigan.com/avatars/error.png'"
+      />
+      <h3 class="name">{{ staff.name }}</h3>
+      <p class="role">{{ staff.roles.join(', ') }}</p>
+      <p>{{ staff.bio }}</p>
+    </div>
+    <div class="socials">
+      <app-social
+        *ngFor="let social of staff.socials"
+        [icon]="social.icon"
+        [name]="social.name"
+        [url]="social.url"
+        [color]="social.color"
+        [background]="social.background"
+        [hover]="social.hover"
+      ></app-social>
+    </div>
+  </div>
+</div>
+<div *ngIf="view === 'artists'">
+  <h2>Artists</h2>
+  <p *ngIf="!this[view].length">
+    It looks like we don't have any {{ view }} yet! Check back later!
+  </p>
+  <div *ngFor="let staff of this[view]">
+    <div class="info">
+      <img
+        class="avatar"
+        src="{{ staff.avatarUrl }}"
+        alt="{{ staff.name }}"
+        onError="this.onError=null;this.src='https://cdn.nhcarrigan.com/avatars/error.png'"
+      />
+      <h3 class="name">{{ staff.name }}</h3>
+      <p class="role">{{ staff.roles.join(', ') }}</p>
+      <p>{{ staff.bio }}</p>
+    </div>
+    <div class="socials">
+      <app-social
+        *ngFor="let social of staff.socials"
+        [icon]="social.icon"
+        [name]="social.name"
+        [url]="social.url"
+        [color]="social.color"
+        [background]="social.background"
+        [hover]="social.hover"
+      ></app-social>
+    </div>
+  </div>
+</div>
+<div *ngIf="this[view].length">
+  <button *ngIf="view !== 'admins'" (click)="setView('admins')">Admins</button>
+  <button *ngIf="view !== 'developers'" (click)="setView('developers')">
+    Developers
+  </button>
+  <button *ngIf="view !== 'support'" (click)="setView('support')">
+    Support
+  </button>
+  <button *ngIf="view !== 'moderators'" (click)="setView('moderators')">
+    Moderators
+  </button>
+  <button *ngIf="view !== 'artists'" (click)="setView('artists')">
+    Artists
+  </button>
+</div>
