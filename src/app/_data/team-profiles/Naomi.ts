@@ -1,7 +1,7 @@
 import {
   faDiscord,
   faGithub,
-  faTwitter,
+  faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
 import { Staff } from "../../../interfaces/Staff";
 
@@ -21,9 +21,9 @@ export const Naomi: Staff = {
       hover: false,
     },
     {
-      name: "Twitter",
-      icon: faTwitter,
-      url: "https://twitter.com/naomi_lgbt",
+      name: "Mastodon",
+      icon: faMastodon,
+      url: "https://mastodon.naomi.lgbt/@naomi",
       color: "#FFFFFF",
       background: "#1DA1F2",
       hover: false,

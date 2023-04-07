@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import {
   faDiscord,
   faGithub,
-  faTwitter,
+  faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
 import { Social } from "src/interfaces/Social";
 
@@ -30,9 +30,9 @@ export class HomeComponent {
       hover: false,
     },
     {
-      name: "Twitter",
-      icon: faTwitter,
-      url: "https://twitter.com/nhcarrigan",
+      name: "Mastodon",
+      icon: faMastodon,
+      url: "https://mastodon.naomi.lgbt/@nhcarrigan",
       color: "#FFFFFF",
       background: "#1DA1F2",
       hover: false,
