@@ -1,5 +1,9 @@
 import { Component } from "@angular/core";
-import { faDiscord, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDiscord,
+  faGithub,
+  faMastodon,
+} from "@fortawesome/free-brands-svg-icons";
 import { Social } from "src/interfaces/Social";
 
 @Component({
@@ -18,9 +22,9 @@ export class NaomiComponent {
       hover: false,
     },
     {
-      name: "Twitter",
-      icon: faTwitter,
-      url: "https://twitter.com/naomi_lgbt",
+      name: "Mastodon",
+      icon: faMastodon,
+      url: "https://mastodon.naomi.lgbt/@naomi",
       color: "#FFFFFF",
       background: "#1DA1F2",
       hover: false,
