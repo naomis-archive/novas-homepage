@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Team } from "../_data/Team";
+import { Team } from "../../data/Team";
 
 @Component({
   selector: "app-team",

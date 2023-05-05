@@ -4,7 +4,7 @@ This repository contains the code for our community's home page. The home page i
 
 ## Live Version
 
-This page is currently deployed. [View the live website.](https://community.nhcarrigan.com)
+This page is currently deployed. [View the live website.](https://www.naomis-novas.com)
 
 ## Feedback and Bugs
 

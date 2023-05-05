@@ -1,5 +1,5 @@
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const VyVyVi: Staff = {
   name: "Vyvy-Vi",

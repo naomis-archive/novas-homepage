@@ -1,6 +1,6 @@
 import { faReddit, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const Elois: Staff = {
   name: "Elois Angel | any pronouns",

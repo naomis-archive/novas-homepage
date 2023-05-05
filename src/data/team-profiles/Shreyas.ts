@@ -1,5 +1,5 @@
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const Shreyas: Staff = {
   name: "Shreyas",

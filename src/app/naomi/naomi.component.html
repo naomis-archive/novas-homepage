@@ -1,24 +1,29 @@
-<h1>Who is Naomi?</h1>
-<img src="https://cdn.nhcarrigan.com/profile.png" alt="Naomi's Novas" />
-<p>
-  I am a software developer based in the United States. I primarily work in
-  TypeScript, though I am willing to learn other languages if needed. For the
-  front end, I use Angular. For the back end, I use Node.js with MongoDB and
-  Express. Most of my projects tend to be Discord bots, powered by
-  <code>discord.js</code>, as that is an area which I find engaging and
-  challenging. And I am quite familiar with the Discord API. Aside from my dev
-  work, I enjoy playing a game or reading a book. Though I spend most of my time
-  working, either as a developer or as a community manager. I am quite
-  passionate about community building, helping out in multiple communities while
-  also maintaining my own. I can also be seen playing Dungeons and Dragons or
-  Magic: The Gathering on occasion.
-</p>
-<app-social
-  *ngFor="let social of socials"
-  [icon]="social.icon"
-  [name]="social.name"
-  [url]="social.url"
-  [color]="social.color"
-  [background]="social.background"
-  [hover]="social.hover"
-></app-social>
+<div class="content">
+  <div class="nes-container with-title is-centered is-rounded">
+    <h1 class="title">Who is Naomi?</h1>
+    <img src="https://cdn.nhcarrigan.com/profile.png" alt="Naomi's Novas" />
+    <p>
+      I am a software developer based in the United States. I primarily work in
+      TypeScript, though I am willing to learn other languages if needed. For
+      the front end, I use Angular. For the back end, I use Node.js with MongoDB
+      and Express. Most of my projects tend to be Discord bots, powered by
+      <code>discord.js</code>, as that is an area which I find engaging and
+      challenging. And I am quite familiar with the Discord API. Aside from my
+      dev work, I enjoy playing a game or reading a book. Though I spend most of
+      my time working, either as a developer or as a community manager. I am
+      quite passionate about community building, helping out in multiple
+      communities while also maintaining my own. I can also be seen playing
+      Dungeons and Dragons or Magic: The Gathering on occasion.
+    </p>
+    <app-social
+      *ngFor="let social of socials"
+      [icon]="social.icon"
+      [name]="social.name"
+      [url]="social.url"
+      [color]="social.color"
+      [background]="social.background"
+      [hover]="social.hover"
+    ></app-social>
+  </div>
+  <a routerLink="/" class="nes-btn">Back Home</a>
+</div>
