@@ -9,7 +9,7 @@
  * If you need help, ask in our Discord.
  */
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../interfaces/Staff";
 
 export const _template: Staff = {
   name: "Your Name",

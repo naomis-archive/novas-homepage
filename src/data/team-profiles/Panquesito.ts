@@ -5,7 +5,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const Panquesito: Staff = {
   name: "David Leal",

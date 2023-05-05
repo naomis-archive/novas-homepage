@@ -1,5 +1,5 @@
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const Starfazers: Staff = {
   name: "Starfazers",

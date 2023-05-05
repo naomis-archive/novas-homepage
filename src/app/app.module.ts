@@ -9,6 +9,7 @@ import { SocialComponent } from './social/social.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TeamComponent } from './team/team.component';
 import { CommunityComponent } from './community/community.component';
+import { NovasComponent } from './novas/novas.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CommunityComponent } from './community/community.component';
     NaomiComponent,
     SocialComponent,
     TeamComponent,
-    CommunityComponent
+    CommunityComponent,
+    NovasComponent
   ],
   imports: [
     BrowserModule,

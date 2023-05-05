@@ -3,7 +3,7 @@ import {
   faGithub,
   faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const Naomi: Staff = {
   name: "Naomi Carrigan",

@@ -8,7 +8,7 @@
  *
  * If you need help, ask in our Discord.
  */
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const Sasho: Staff = {
   name: "Sasho",

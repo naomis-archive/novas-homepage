@@ -1,4 +1,4 @@
-import { Staff } from "../../../interfaces/Staff";
+import { Staff } from "../../interfaces/Staff";
 
 export const Ooigle: Staff = {
   name: "Ooigle",

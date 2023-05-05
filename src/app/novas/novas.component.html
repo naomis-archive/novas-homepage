@@ -1,0 +1,55 @@
+<div class="content">
+  <div
+    *ngIf="view === 'intro'"
+    class="nes-container with-title is-centered is-rounded"
+  >
+    <h1 class="title">Novas</h1>
+    <p>
+      "Naomi's Novas" might refer to our community, but it also refers to Naomi
+      and her two characters, Becca Lyria and Rosalia Nightsong.
+    </p>
+    <p>Here you can see pictures of the three of them, if you'd like.</p>
+  </div>
+  <div
+    *ngIf="view === 'pose'"
+    class="nes-container with-title is-centered is-rounded"
+  >
+    <h1 class="title">Pictures</h1>
+    <p>Different images of the Novas.</p>
+    <p>
+      There are <strong>{{ poses.length }}</strong> pictures available to
+      browse.
+    </p>
+  </div>
+  <div
+    *ngIf="view === 'pose'"
+    class="nes-container is-rounded is-centered image"
+  >
+    <a
+      href="https://cdn.naomi.lgbt/novas/koikatsu/{{ poses[currentPoseIndex] }}"
+      target="_blank"
+    >
+      <img
+        src="https://cdn.naomi.lgbt/novas/koikatsu/{{
+          poses[currentPoseIndex]
+        }}"
+        alt=""
+      />
+    </a>
+    <p>
+      {{ getPoseName(currentPoseIndex) }}
+    </p>
+    <button class="nes-btn" (click)="previousPose()">Previous Picture</button>
+    <button class="nes-btn" (click)="nextPose()">Next Picture</button>
+    <select #pose (change)="selectPose(pose.value)">
+      <option disabled selected>Jump to Picture</option>
+      <option *ngFor="let pose of poses; let i = index" [value]="i">
+        {{ getPoseName(i) }}
+      </option>
+    </select>
+  </div>
+  <button *ngIf="view !== 'pose'" class="nes-btn" (click)="changeView('pose')">
+    See Poses
+  </button>
+  <a class="nes-btn" routerLink="/">Back Home</a>
+</div>
