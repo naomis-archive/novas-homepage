@@ -25,26 +25,30 @@
     *ngIf="view === 'pose'"
     class="nes-container is-rounded is-centered image"
   >
+    <h2 class="title">{{ poses[currentPoseIndex].name }}</h2>
+    <p>{{ poses[currentPoseIndex].description }}</p>
     <a
-      href="https://cdn.naomi.lgbt/novas/koikatsu/{{ poses[currentPoseIndex] }}"
+      href="https://cdn.naomi.lgbt/novas/koikatsu/{{
+        poses[currentPoseIndex].fileName
+      }}"
       target="_blank"
     >
       <img
         src="https://cdn.naomi.lgbt/novas/koikatsu/{{
-          poses[currentPoseIndex]
+          poses[currentPoseIndex].fileName
         }}"
-        alt=""
+        alt="{{ poses[currentPoseIndex].alt }}"
       />
     </a>
-    <p>
-      {{ getPoseName(currentPoseIndex) }}
-    </p>
     <button class="nes-btn" (click)="previousPose()">Previous Picture</button>
     <button class="nes-btn" (click)="nextPose()">Next Picture</button>
     <select #pose (change)="selectPose(pose.value)">
-      <option disabled selected>Jump to Picture</option>
-      <option *ngFor="let pose of poses; let i = index" [value]="i">
-        {{ getPoseName(i) }}
+      <option
+        *ngFor="let pose of poses; let i = index"
+        [value]="i"
+        [selected]="i === currentPoseIndex"
+      >
+        {{ pose.name }}
       </option>
     </select>
   </div>

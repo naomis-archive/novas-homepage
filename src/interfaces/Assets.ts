@@ -1,3 +1,5 @@
+import { Pose } from "./Pose";
+
 export interface Assets {
-  poses: string[];
+  poses: Pose[];
 }
