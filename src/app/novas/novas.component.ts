@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { HelpersService } from "../helpers.service";
 import { AssetsService } from "../assets.service";
+import { Pose } from "src/interfaces/Pose";
 
 type viewType = "intro" | "pose";
 
@@ -11,19 +12,14 @@ type viewType = "intro" | "pose";
 })
 export class NovasComponent {
   public view: viewType = "intro";
-  public poses: string[] = [];
+  public poses: Pose[] = [];
   public currentPortraitIndex = 0;
   public currentEmoteIndex = 0;
   public currentPoseIndex = 0;
 
   constructor(private assetService: AssetsService) {
     this.assetService.fetchPoses().subscribe((poses) => {
-      this.poses = poses.sort((a, b) =>
-        HelpersService.numericSortWithHyphen(
-          HelpersService.parseFileName(a),
-          HelpersService.parseFileName(b)
-        )
-      );
+      this.poses = poses.sort((a, b) => a.name.localeCompare(b.name));
     });
   }
 
@@ -48,13 +44,5 @@ export class NovasComponent {
 
   selectPose(index: string) {
     this.currentPoseIndex = parseInt(index);
-  }
-
-  getPoseName(index: number) {
-    const fileName = this.poses[index];
-    const withoutExtension = fileName.split(".")[0];
-    const [name, number] = withoutExtension.split("-");
-    const titleCasedName = `${name[0].toUpperCase()}${name.slice(1)}`;
-    return number ? `${titleCasedName} ${number}` : titleCasedName;
   }
 }

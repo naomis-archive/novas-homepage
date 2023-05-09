@@ -15,7 +15,21 @@ describe("NovasComponent", () => {
 
     fixture = TestBed.createComponent(NovasComponent);
     component = fixture.componentInstance;
-    component.poses = ["beach.png", "bed.png"];
+    component.poses = [
+      {
+        fileName: "beach.png",
+        name: "Beach Trip",
+        alt: "Naomi, Rosalia, and Becca in their swimwear, relaxing together on a large beach towel.",
+        description: "A nice, relaxing getaway from their busy lives.",
+      },
+      {
+        fileName: "bed.png",
+        name: "Sleepover",
+        alt: "Naomi, Rosalia, and Becca relaxing on their bed together.",
+        description:
+          "They like to have sleepovers and catch up on what's going on in their lives.",
+      },
+    ];
     fixture.detectChanges();
   });
 
