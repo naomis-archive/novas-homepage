@@ -11,7 +11,7 @@
     <p>Here you can see pictures of the three of them, if you'd like.</p>
   </div>
   <div
-    *ngIf="view === 'pose'"
+    *ngIf="view === 'pose' && poses.length"
     class="nes-container with-title is-centered is-rounded"
   >
     <h1 class="title">Pictures</h1>
@@ -22,7 +22,7 @@
     </p>
   </div>
   <div
-    *ngIf="view === 'pose'"
+    *ngIf="view === 'pose' && poses.length"
     class="nes-container is-rounded is-centered image"
   >
     <h2 class="title">{{ poses[currentPoseIndex].name }}</h2>
