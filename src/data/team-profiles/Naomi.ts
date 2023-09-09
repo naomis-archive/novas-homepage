@@ -15,7 +15,7 @@ export const Naomi: Staff = {
     {
       name: "Discord",
       icon: faDiscord,
-      url: "https://chat.naomi.lgbt",
+      url: "https://chat.nhcarrigan.com",
       color: "#FFFFFF",
       background: "#5865F2",
       hover: false,
